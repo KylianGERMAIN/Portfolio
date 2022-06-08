@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Kylian Germain Portfolio</title>
       </Head>
       <div>
         <p className="text-3xl font-bold underline">Start</p>
