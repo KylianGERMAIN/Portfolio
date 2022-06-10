@@ -1,14 +1,19 @@
 import { Popover, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
+import { AiFillHome } from 'react-icons/ai';
+import { IoIosMan, IoMdSchool } from 'react-icons/io';
+import { BsBriefcaseFill } from 'react-icons/bs';
+import { RiContactsBook2Fill } from 'react-icons/ri';
+
 interface Props {
 }
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About me', href: '/' },
-  { name: 'My project', href: '/' },
-  { name: 'Parcours', href: '/' },
-  { name: 'Contact', href: '/' },
+  { name: 'Home', href: '/', icon: <AiFillHome /> },
+  { name: 'About me', href: '/', icon: <IoIosMan /> },
+  { name: 'My project', href: '/', icon: <BsBriefcaseFill /> },
+  { name: 'Parcours', href: '/', icon: <IoMdSchool /> },
+  { name: 'Contact', href: '/', icon: <RiContactsBook2Fill /> },
 ]
 
 const Header = ({ }: Props) => {
@@ -29,11 +34,14 @@ const Header = ({ }: Props) => {
           <div className='w-1/4'>
             <p>Kyger.</p>
           </div>
-          <div className='w-3/4 space-x-10'>
-            {navigation.map((item) => (
-              <a className='text-black ' href={item.href} key={item.name}>
-                {item.name}
-              </a>
+          <div className='w-3/4 space-x-10 flex'>
+            {navigation.map((item, i) => (
+              <div className='flex items-center' key={i}>
+                {item.icon}
+                <a className='text-black ' href={item.href}>
+                  {item.name}
+                </a>
+              </div>
             ))}
           </div>
         </div>
