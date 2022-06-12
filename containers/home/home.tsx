@@ -1,12 +1,11 @@
 import { NextPage } from "next"
+import BannerDownload from "../../components/element/Banner-download"
 
 
 const HomeContainer: NextPage = () => {
   return (
-    <div>
-      <div>
-        <p className=" font-bold underline">Starddt</p>
-      </div>
+    <div className="">
+      <BannerDownload />
     </div>
   )
 }
