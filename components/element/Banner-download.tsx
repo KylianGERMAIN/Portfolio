@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next"
 import Image from 'next/image'
 
