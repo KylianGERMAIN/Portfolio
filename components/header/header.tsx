@@ -4,44 +4,44 @@ import { AiFillHome } from 'react-icons/ai';
 import { IoIosMan, IoMdSchool } from 'react-icons/io';
 import { BsBriefcaseFill } from 'react-icons/bs';
 import { RiContactsBook2Fill } from 'react-icons/ri';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { GrFormClose } from 'react-icons/gr';
 
 interface Props {
 }
 
 const navigation = [
-  { name: 'Home', href: '/', icon: <AiFillHome size={20} />, style: 'text-[#FF4C60]' },
-  { name: 'About me', href: '/', icon: <IoIosMan size={20} />, style: 'color-black' },
-  { name: 'My project', href: '/', icon: <BsBriefcaseFill size={20} />, style: 'color-black' },
-  { name: 'Parcours', href: '/', icon: <IoMdSchool size={20} />, style: 'color-black' },
-  { name: 'Contact', href: '/', icon: <RiContactsBook2Fill size={20} />, style: 'color-black' },
+  { name: 'Home', href: '/', icon: <AiFillHome /> },
+  { name: 'About me', href: '/', icon: <IoIosMan /> },
+  { name: 'My project', href: '/', icon: <BsBriefcaseFill /> },
+  { name: 'Parcours', href: '/', icon: <IoMdSchool /> },
+  { name: 'Contact', href: '/', icon: <RiContactsBook2Fill /> },
 ]
 
 const Header = ({ }: Props) => {
 
   return (
     <Popover>
-      <nav className='p-5 fixed w-full bg-[#FFFAFA]'>
-        <div className='flex justify-start justify-between  place-items-center lg:hidden w-full mr-8'>
+      <nav className='p-5 bg-red-100'>
+        <div className='flex justify-start justify-between  place-items-center md:hidden w-full mr-8'>
           <div className='w-1/4'>
-            <p className='font-bold text-3xl'>Kyger.</p>
+            <p>Kyger.</p>
           </div>
-          <Popover.Button className='text-black rounded-lg'>
+          <Popover.Button className='bg-[#7CA55E] text-white hover:bg-gray-700 rounded-lg'>
             <span className='sr-only'>Open main menu</span>
-            <GiHamburgerMenu size={30} />
+            <p>ccc</p>
           </Popover.Button>
         </div>
-        <div className='hidden lg:flex w-full'>
-          <div className='w-1/6  lg:w-1/4'>
-            <h1 className='font-bold md:text-3xl align-top'>Kyger.</h1>
+        <div className='hidden md:flex'>
+          <div className='w-1/4'>
+            <p>Kyger.</p>
           </div>
-          <div className='w-5/6 lg:w-3/4 space-x-10 flex'>
+          <div className='w-3/4 space-x-10 flex'>
             {navigation.map((item, i) => (
-              <a className='flex items-center  ' href={item.href} key={i}>
-                <div className={`lg:pr-8 ${item.style}`}>{item.icon}</div>
-                <p className={`text-sm  lg:text-base ${item.style}`}>{item.name}</p>
-              </a>
+              <div className='flex items-center' key={i}>
+                {item.icon}
+                <a className='text-black ' href={item.href}>
+                  {item.name}
+                </a>
+              </div>
             ))}
           </div>
         </div>
@@ -57,22 +57,22 @@ const Header = ({ }: Props) => {
         leaveTo='opacity-0 scale-95'
       >
         <Popover.Panel
-          className='h-full w-full bg-[#FFFAFA] absolute z-10 top-0 inset-x-0 transition transform origin-top-right lg:hidden shadow-md'
+          className='h-full w-full bg-white absolute z-10 top-0 inset-x-0 transition transform origin-top-right md:hidden shadow-md'
           focus
         >
-          <div className='p-8 bg-[#FFFAFA] overflow-hidden'>
+          <div className='p-8 bg-white overflow-hidden'>
             <div className='pt-4 flex items-center justify-between'>
               <div className='-mr-2'>
-                <Popover.Button className=' rounded-md p-1 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100'>
+                <Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
                   <span className='sr-only'>Close menu</span>
-                  <GrFormClose size={30} />
+                  {/* <XIcon aria-hidden='true' className='h-6 w-6' /> */}
                 </Popover.Button>
               </div>
             </div>
             <div className='px-2 pt-2 pb-3 space-y-1'>
               {navigation.map((item) => (
                 <a
-                  className='block px-3 py-2 rounded-md text-lg font-medium text-black active:text-black hover:bg-gray-50'
+                  className='block px-3 py-2 rounded-md text-lg font-medium text-[#7CA55E] active:text-black hover:bg-gray-50'
                   href={item.href}
                   key={item.name}
                 >
