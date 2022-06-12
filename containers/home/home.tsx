@@ -5,7 +5,7 @@ import BannerDownload from "../../components/element/Banner-download"
 const HomeContainer: NextPage = () => {
   return (
     <div className="">
-      {/* <BannerDownload /> */}
+      <BannerDownload />
     </div>
   )
 }
