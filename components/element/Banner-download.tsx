@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const BannerDownload: NextPage = () => {
   return (
-    <div className="h-screen">
-      <div className="flex lg:h-screen justify-center py-40 md:gap-20 xl:gap-52">
+    <div className="">
+      <div className="flex  justify-center py-32 md:gap-20 xl:gap-52">
         <div className=' flex flex-col justify-center items-center '>
           <div className="pl-5 lg:p-0">
             <p className="text-4xl md:text-5xl text-left font-bold pb-5">Hello, I&lsquo;m</p>

@@ -22,7 +22,7 @@ const Header = ({ }: Props) => {
 
   return (
     <Popover>
-      <nav className='p-5 fixed w-full bg-[#FFFAFA]'>
+      <nav className='p-5 fixed w-full bg-[#FFFAFA] z-50'>
         <div className='flex justify-start justify-between  place-items-center lg:hidden w-full mr-8'>
           <div className='w-1/4'>
             <p className='font-bold text-3xl'>Kyger.</p>
@@ -32,11 +32,11 @@ const Header = ({ }: Props) => {
             <GiHamburgerMenu size={30} />
           </Popover.Button>
         </div>
-        <div className='hidden lg:flex w-full'>
-          <div className='w-1/6  lg:w-1/4'>
-            <h1 className='font-bold md:text-3xl align-top'>Kyger.</h1>
+        <div className='hidden lg:flex  justify-center   place-items-center space-x-32'>
+          <div className=''>
+            <h1 className='font-bold md:text-3xl'>Kyger.</h1>
           </div>
-          <div className='w-5/6 lg:w-3/4 space-x-10 flex'>
+          <div className='space-x-10 flex'>
             {navigation.map((item, i) => (
               <a className='flex items-center  ' href={item.href} key={i}>
                 <div className={`lg:pr-8 ${item.style}`}>{item.icon}</div>
