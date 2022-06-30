@@ -39,7 +39,6 @@ a {
   visibility: hidden;
   opacity: 0;
 
-  /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
 
@@ -55,8 +54,6 @@ a {
   color: #fff;
   visibility: hidden;
   opacity: 0;
-
-  /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
 
@@ -68,4 +65,8 @@ a {
 .img__wrap:hover .img__descriptions {
   visibility: visible;
   opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
 }

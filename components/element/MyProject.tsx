@@ -32,8 +32,8 @@ const MyProject: NextPage = () => {
   }
 
   return (
-    <div className="py-32 ">
-      <h2 className="text-4xl font-bold pt-5 pb-5 text-center">My project</h2>
+    <div id="My_project" className="py-32 ">
+      <h2 className="text-4xl font-bold pt-5 pb-5 text-center text-[#282828]">My project</h2>
       <div className="grid  md:grid-rows-2 md:grid-flow-col justify-center place-items-center items-center pt-10">
         {imageContainer("/img/area.png", "https://github.com/KylianGERMAIN/Area", "Area", "This is a reaction action project with APIs. The project was elected best project in the class")}
         {imageContainer("/img/viepest.png", "https://viepest.herokuapp.com/", "ViePest", "This project was created by myself during an internship and is linked to a strapi back office")}

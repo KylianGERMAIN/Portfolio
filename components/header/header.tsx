@@ -11,9 +11,9 @@ interface Props {
 }
 
 const navigation = [
-  { name: 'Home', href: '/', icon: <AiFillHome size={20} />, style: 'text-[#FF4C60]' },
-  { name: 'About me', href: '/', icon: <IoIosMan size={20} />, style: 'color-black' },
-  { name: 'My project', href: '/', icon: <BsBriefcaseFill size={20} />, style: 'color-black' },
+  { name: 'Home', href: '#Home', icon: <AiFillHome size={20} />, style: 'text-[#FF4C60]' },
+  { name: 'About me', href: '#About_me', icon: <IoIosMan size={20} />, style: 'color-black' },
+  { name: 'My project', href: '#My_project', icon: <BsBriefcaseFill size={20} />, style: 'color-black' },
   { name: 'Parcours', href: '/', icon: <IoMdSchool size={20} />, style: 'color-black' },
   { name: 'Contact', href: '/', icon: <RiContactsBook2Fill size={20} />, style: 'color-black' },
 ]
@@ -25,7 +25,7 @@ const Header = ({ }: Props) => {
       <nav className='p-5 fixed w-full bg-[#FFFAFA] z-50'>
         <div className='flex justify-start justify-between  place-items-center lg:hidden w-full mr-8'>
           <div className='w-1/4'>
-            <p className='font-bold text-3xl'>Kyger.</p>
+            <p className='font-bold text-3xl text-[#282828]'>Kyger.</p>
           </div>
           <Popover.Button className='text-black rounded-lg'>
             <span className='sr-only'>Open main menu</span>
@@ -34,7 +34,7 @@ const Header = ({ }: Props) => {
         </div>
         <div className='hidden lg:flex  justify-center   place-items-center space-x-32'>
           <div className=''>
-            <h1 className='font-bold md:text-3xl'>Kyger.</h1>
+            <h1 className='font-bold md:text-3xl text-[#282828]'>Kyger.</h1>
           </div>
           <div className='space-x-10 flex'>
             {navigation.map((item, i) => (
@@ -72,7 +72,7 @@ const Header = ({ }: Props) => {
             <div className='px-2 pt-2 pb-3 space-y-1'>
               {navigation.map((item) => (
                 <a
-                  className='block px-3 py-2 rounded-md text-lg font-medium text-black active:text-black hover:bg-gray-50'
+                  className='block px-3 py-2 rounded-md text-lg font-medium text-[#282828] active:text-black hover:bg-gray-50'
                   href={item.href}
                   key={item.name}
                 >
