@@ -11,7 +11,7 @@ const BannerDownload: NextPage = () => {
             <p className="text-4xl md:text-5xl text-left font-bold pb-5 text-[#282828]">Kylian Germain</p>
             <p className="text-3xl md:text-5xl text-left font-bold text-[#FF4C60] pb-5">Full Stack Developer</p>
             <a href="EPITECH_GERMAIN_Kylian_CV.pdf" download="EPITECH_GERMAIN_Kylian_CV">
-              <button className="transition duration-500 hover:bg-[#ff384b] bg-[#FF4C60] font-bold text-white p-1 px-6 text-3xl rounded-xl">Download</button>
+              <button className="drop-shadow-xl transition duration-500 hover:bg-[#ff384b] bg-[#FF4C60] font-bold text-white p-1 px-6 text-3xl rounded-xl">Download</button>
             </a>
             <div className="flex items-center pt-12">
               <img

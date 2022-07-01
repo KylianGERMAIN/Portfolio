@@ -22,8 +22,8 @@ const CareerPath: NextPage = () => {
 
   return (
     <div>
-      <div className="w-full flex">
-        <div id="Career_Path" className="w-1/3 text-[#282828] pr-10 text-xl space-y-5 font-bold hidden lg:flex justify-end">
+      <div id="Career_Path" className="w-full flex pt-20">
+        <div className="w-1/3 text-[#282828] pr-10 text-xl space-y-5 font-bold hidden lg:flex justify-end">
           <div className="w-[270px] pt-[150px]">
             <a href="#Diplomas_and_qualiﬁcations">
               <h3 className="hover:text-[#FF4C60] cursor-pointer">Diplomas and qualiﬁcations</h3>

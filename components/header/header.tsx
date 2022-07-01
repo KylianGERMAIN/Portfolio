@@ -14,7 +14,7 @@ const navigation = [
   { name: 'Home', href: '#Home', icon: <AiFillHome size={20} />, style: 'text-[#FF4C60]' },
   { name: 'About me', href: '#About_me', icon: <IoIosMan size={20} />, style: 'color-black' },
   { name: 'My project', href: '#My_project', icon: <BsBriefcaseFill size={20} />, style: 'color-black' },
-  { name: 'Parcours', href: '/', icon: <IoMdSchool size={20} />, style: 'color-black' },
+  { name: 'Parcours', href: '#Career_Path', icon: <IoMdSchool size={20} />, style: 'color-black' },
   { name: 'Contact', href: '/', icon: <RiContactsBook2Fill size={20} />, style: 'color-black' },
 ]
 

@@ -22,7 +22,7 @@ const Social: NextPage = () => {
                 </div>
               </a>
             </div>
-            <div className="w-1/2 grid justify-end pr-20 ">
+            <div className="w-1/2 grid justify-start pr-20 ">
               <a href="https://www.linkedin.com/in/kylian-germain/" target="_blank" rel="noreferrer">
                 <div className="w-full grid place-items-center">
                   <img className="" src={'/img/linkedin.png'} alt='icon' />
