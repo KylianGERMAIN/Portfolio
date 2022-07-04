@@ -71,8 +71,9 @@ const Contact: NextPage = () => {
             }} value={Message}>
             </textarea>
           </div>
-          <div className="p-10 block">
 
+          <p>{process.env.PASSWORDMAIL}</p>
+          <div className="p-10 block">
             {Error != 2 ?
               <button className="transition drop-shadow-xl duration-500 hover:bg-[#ff384b] bg-[#FF4C60] font-bold text-white p-1 px-6 text-xl rounded-xl"
                 onClick={() => {
@@ -94,7 +95,7 @@ const Contact: NextPage = () => {
                       .then((res) => {
                         console.log("Response received", res);
                         if (res.status === 200) {
-                          console.log(process.env)
+
                           setSend(true)
                           setError(0)
                           reset()

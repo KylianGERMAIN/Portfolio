@@ -4,7 +4,7 @@ export default async function (req, res) {
 
   let nodemailer = require('nodemailer')
   const transporter = nodemailer.createTransport({
-    host: "smtp-mail.outlook.com",
+    host: "smtp.office365.com",
     secureConnection: false,
     port: 587,
     auth: {
