@@ -94,7 +94,7 @@ const Contact: NextPage = () => {
                       .then((res) => {
                         console.log("Response received", res);
                         if (res.status === 200) {
-                          console.log(process.env.PASSWORDMAIL)
+                          console.log(process.env)
                           setSend(true)
                           setError(0)
                           reset()
