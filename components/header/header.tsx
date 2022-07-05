@@ -38,7 +38,9 @@ const Header = ({ }: Props) => {
         </div>
         <div className='hidden lg:flex  justify-center   place-items-center space-x-32'>
           <div className=''>
-            <h1 className='font-bold md:text-3xl text-[#282828]'>Kyger.</h1>
+            <a href='#Home'>
+              <h1 className='font-bold md:text-3xl text-[#282828]'>Kyger.</h1>
+            </a>
           </div>
           <div className='space-x-10 flex'>
             {navigation.map((item, i) => (
