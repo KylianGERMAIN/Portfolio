@@ -25,10 +25,8 @@ export default async function (req, res) {
 
   transporter.sendMail(mailData, (err, data) => {
     if (err) {
-      console.log(err);
       res.send("error" + JSON.stringify(err));
     } else {
-      console.log('Email sent: ' + data.response);
       res.send(req);
     }
   });

@@ -91,14 +91,12 @@ const Contact: NextPage = () => {
                       }),
                     })
                       .then((res) => {
-                        console.log("Response received", res);
                         if (res.status === 200) {
 
                           setSend(true)
                           setError(0)
                           reset()
                         } else {
-                          console.log("Email/Password is invalid.");
                           setError(2)
                         }
                       })
