@@ -10,7 +10,7 @@ const Social: NextPage = () => {
         <div className=" bg-[#F9F3F5] rounded-lg flex">
           <div className="md:w-[500px] p-10">
             <h3 className="text-2xl font-bold text-center pb-2">Social Media</h3>
-            <p className="text-center text-[#C4C4C4]">Mauris aliquet egestas metus</p>
+            <p className="text-center text-[#C4C4C4]">Social networks where I am active</p>
           </div>
           <div className="w-2/3 flex place-items-center">
             <div className="w-1/2 grid justify-end pr-10 ">

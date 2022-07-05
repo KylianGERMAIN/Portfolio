@@ -44,9 +44,9 @@ const CareerPath: NextPage = () => {
           {frame("/img/school.png", "2016", "Brevet des collèges (Junior High School diploma)", "College Stendhal", "")}
           <div id="Professional_Experiences" className="pb-10 pt-10"></div>
           <h3 className="text-[#FF4C60] font-bold text-2xl pb-10 pt-10">Professional Experiences</h3>
-          {frame("/img/work.png", "Avril 2022 - Juillet 2022", "Full Stack Developer", "Blanc-Sec Media", "")}
-          {frame("/img/work.png", "Octobre 2021 - Avril 2022", "Web Developer", "Support Web", "")}
-          {frame("/img/work.png", "July 2020 - January 2021", "Full Stack Developer", "Ezus", "")}
+          {frame("/img/work.png", "Avril 2022 - Juillet 2022", "Full Stack Developer", "Blanc-Sec Media", `Created a web project alone in Nextjs using Tailwind for the CSS and linked it to Strapi as a back office. Creating continuous testing with playwright and deploying with heroku`)}
+          {frame("/img/work.png", "Octobre 2021 - Avril 2022", "Part-time Web Developer", "Support Web", "CSS correction on different websites and Creation of a specification of a website.")}
+          {frame("/img/work.png", "July 2020 - January 2021", "Full Stack Developer", "Ezus", "Continuous integration in agile Scrum methodology of a back and a front from a model. The front is based on React js and CSS and the back is in python with a SQL database hosted on amazon AWS")}
         </div>
 
       </div>

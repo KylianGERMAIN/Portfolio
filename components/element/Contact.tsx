@@ -121,8 +121,10 @@ const Contact: NextPage = () => {
       </div>
       <div className="lg:w-1/2 flex justify-end place-items-center">
         <div className="lg:w-3/4  bg-[#F9F3F5] grid">
-          <h3 className="font-bold text-4xl text-left p-10">Get in touch with us!</h3>
-          <p className="p-10 pt-0 font-bold">Whether you want to learn about UX or need product design services let us help with your challenge.</p>
+          <h3 className="font-bold text-4xl text-left p-10">Contact me!</h3>
+          <p className="p-10 pt-0 font-bold">
+            Would you like to offer me A permanent contract ? Or or implement discuss with me about a project ? Do not hesitate to contact me.
+          </p>
           <div className="xl:flex space-y-10 xl:space-y-0 justify-around p-10">
             <a href="mailto:kylian.germain@hotmail.com" target="_blank" rel="noreferrer">
               <div className="w-full grid place-items-center space-y-5">
