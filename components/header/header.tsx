@@ -75,13 +75,16 @@ const Header = ({ }: Props) => {
             </div>
             <div className='px-2 pt-2 pb-3 space-y-1'>
               {navigation.map((item) => (
-                <a
-                  className='block px-3 py-2 rounded-md text-lg font-medium text-[#282828] active:text-black hover:bg-gray-50'
-                  href={item.href}
-                  key={item.name}
-                >
-                  {item.name}
-                </a>
+                <Popover.Button className='grid'
+                  key={item.name}>
+                  <a
+                    className='block px-3 py-2 rounded-md text-lg font-medium text-[#282828] active:text-black hover:bg-gray-50'
+                    href={item.href}
+
+                  >
+                    {item.name}
+                  </a>
+                </Popover.Button>
               ))}
               <div>
               </div>
