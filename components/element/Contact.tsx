@@ -52,7 +52,7 @@ const Contact: NextPage = () => {
               </div>
             </div>
             : <div>
-              <div className="pt-10 pr-10 xl:pr-32 pl-10">
+              {/* <div className="pt-10 pr-10 xl:pr-32 pl-10">
                 <input className="bg-white h-[60px] w-full rounded-lg placeholder:text-[#C4C4C4] pr-[14px] pl-[14px] border-red-500 focus:outline-0 border-red-600 border-2" type="text" placeholder="Email address*" onChange={(e) => {
                   setEmail(e.target.value)
                 }} value={Email} />
@@ -63,7 +63,7 @@ const Contact: NextPage = () => {
                   setSubject(e.target.value)
                 }} value={Subject} />
                 <p className="text-red-600">This field is required.</p>
-              </div>
+              </div> */}
             </div>}
           <div className="pt-10 pr-20 pl-10">
             <textarea className="w-full drop-shadow-xl h-[160px] resize-none rounded-lg placeholder:text-[#C4C4C4] pr-[14px] pl-[14px] pt-[14px] focus:outline-0" id="story" name="story" placeholder="Message" onChange={(e) => {

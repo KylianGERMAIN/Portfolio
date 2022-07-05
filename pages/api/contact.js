@@ -4,18 +4,16 @@ export default async function (req, res) {
 
   let nodemailer = require('nodemailer')
   const transporter = nodemailer.createTransport({
-    host: "smtp.office365.com",
-    secureConnection: false,
-    port: 587,
+    service: 'gmail',
     auth: {
-      user: 'kylian.germain@hotmail.com',
+      user: 'kyliangermain0@gmail.com',
       pass: process.env.PASSWORDMAIL,
     },
   })
 
 
   const mailData = {
-    from: 'kylian.germain@hotmail.com',
+    from: 'kyliangermain0@gmail.com',
     to: 'kylian.germain@hotmail.com',
     subject: `${req.body.Subject.length != 0 ? req.body.Subject : `Message From ${req.body.Name}`}`,
     text: req.body.Message + " | Sent from: " + req.body.Email + " | Phone number:" + req.body.Phone,
