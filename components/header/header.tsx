@@ -63,13 +63,13 @@ const Header = ({ }: Props) => {
         leaveTo='opacity-0 scale-95'
       >
         <Popover.Panel
-          className='h-full w-full bg-[#FFFAFA] absolute z-10 top-0 inset-x-0 transition transform origin-top-right lg:hidden shadow-md'
+          className='fixed h-full w-full bg-[#FFFAFA]  z-10 top-0 inset-x-0 transition transform origin-top-right lg:hidden shadow-md'
           focus
         >
           <div className='pt-20 p-8 bg-[#FFFAFA] overflow-hidden'>
             <div className='pt-4 flex items-center justify-between'>
               <div className='-mr-2'>
-                <Popover.Button className=' rounded-md p-1 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100'>
+                <Popover.Button className=' rounded-md p-1 inline-flex items-center justify-center text-gray-400'>
                   <span className='sr-only'>Close menu</span>
                   <GrFormClose size={30} />
                 </Popover.Button>
