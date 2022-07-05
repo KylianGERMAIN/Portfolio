@@ -25,7 +25,9 @@ const Header = ({ }: Props) => {
       <nav className='p-5 fixed w-full bg-[#FFFAFA] z-50'>
         <div className='flex justify-start justify-between  place-items-center lg:hidden w-full mr-8'>
           <div className='w-1/4'>
-            <p className='font-bold text-3xl text-[#282828]'>Kyger.</p>
+            <a href='#Home'>
+              <p className='font-bold text-3xl text-[#282828]'>Kyger.</p>
+            </a>
           </div>
           <Popover.Button className='text-black rounded-lg'>
             <a href='#Home'>
