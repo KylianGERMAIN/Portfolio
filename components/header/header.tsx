@@ -28,8 +28,10 @@ const Header = ({ }: Props) => {
             <p className='font-bold text-3xl text-[#282828]'>Kyger.</p>
           </div>
           <Popover.Button className='text-black rounded-lg'>
-            <span className='sr-only'>Open main menu</span>
-            <GiHamburgerMenu size={30} />
+            <a href='#Home'>
+              <span className='sr-only'>Open main menu</span>
+              <GiHamburgerMenu size={30} />
+            </a>
           </Popover.Button>
         </div>
         <div className='hidden lg:flex  justify-center   place-items-center space-x-32'>
@@ -60,7 +62,7 @@ const Header = ({ }: Props) => {
           className='h-full w-full bg-[#FFFAFA] absolute z-10 top-0 inset-x-0 transition transform origin-top-right lg:hidden shadow-md'
           focus
         >
-          <div className='p-8 bg-[#FFFAFA] overflow-hidden'>
+          <div className='pt-20 p-8 bg-[#FFFAFA] overflow-hidden'>
             <div className='pt-4 flex items-center justify-between'>
               <div className='-mr-2'>
                 <Popover.Button className=' rounded-md p-1 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100'>
