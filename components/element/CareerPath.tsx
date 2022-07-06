@@ -37,7 +37,7 @@ const CareerPath: NextPage = () => {
           <h2 id="Diplomas_and_qualiﬁcations" className="text-5xl font-bold pt-5 pb-20 text-left text-[#282828]">Career path</h2>
           <h3 className="text-[#FF4C60] font-bold text-2xl pb-10 ">Diplomas and qualiﬁcations</h3>
           {frame("/img/school.png", "2019 - 2024", "Expert en Technologies de l'Information (Diploma of expert of informatic system)", "Epitech Paris", "")}
-          {frame("/img/school.png", "2023", "Erasmus +", "AGH University of Science and Technology", "")}
+          {frame("/img/school.png", "2023", "Erasmus + in Krakow (Poland)", "AGH University of Science and Technology", "")}
           {frame("/img/school.png", "2021", "Tepitech 780 (TOEIC)", "Epitech Paris", "")}
           {frame("/img/school.png", "2020", "TC1 educational training", "Ionis-STM", "")}
           {frame("/img/school.png", "2019", "Baccalaureat Scientifique Option Informatique (High School diploma)", "Lycée Charles Baudelaire", "")}
