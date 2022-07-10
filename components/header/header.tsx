@@ -11,7 +11,7 @@ interface Props {
 }
 
 const navigation = [
-  { name: 'Home', href: '#Home', icon: <AiFillHome size={20} />, style: 'text-[#FF4C60]' },
+  { name: 'Home', href: '#Home', icon: <AiFillHome size={20} />, style: 'color-black' },
   { name: 'About me', href: '#About_me', icon: <IoIosMan size={20} />, style: 'color-black' },
   { name: 'My project', href: '#My_project', icon: <BsBriefcaseFill size={20} />, style: 'color-black' },
   { name: 'Career path', href: '#Career_Path', icon: <IoMdSchool size={20} />, style: 'color-black' },
@@ -26,7 +26,7 @@ const Header = ({ }: Props) => {
         <div className='flex justify-start justify-between  place-items-center lg:hidden w-full mr-8'>
           <div className='w-1/4'>
             <a href='#Home'>
-              <p className='font-bold text-3xl text-[#282828]'>Kyger.</p>
+              <p className='font-bold text-3xl text-[#FF4C60] '>Kyger.</p>
             </a>
           </div>
           <Popover.Button className='text-black rounded-lg'>
@@ -39,7 +39,7 @@ const Header = ({ }: Props) => {
         <div className='hidden lg:flex  justify-center   place-items-center space-x-32'>
           <div className=''>
             <a href='#Home'>
-              <h1 className='font-bold md:text-3xl text-[#282828]'>Kyger.</h1>
+              <h1 className='font-bold md:text-3xl text-[#FF4C60] '>Kyger.</h1>
             </a>
           </div>
           <div className='space-x-10 flex'>
