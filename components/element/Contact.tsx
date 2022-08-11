@@ -3,7 +3,11 @@ import { NextPage } from "next";
 import { useState } from "react";
 import Sendmail from "../../pages/api/contact";
 
-const Contact: NextPage = () => {
+interface Props {
+  lang: any;
+}
+
+const Contact = ({ lang }: Props) => {
   const [Name, setName] = useState("");
   const [Phone, setPhone] = useState("");
   const [Email, setEmail] = useState("");
@@ -33,7 +37,7 @@ const Contact: NextPage = () => {
               <input
                 className="bg-white drop-shadow-xl h-[60px] w-[200px] rounded-lg placeholder:text-[#C4C4C4] pr-[14px] pl-[14px] focus:outline-0"
                 type="text"
-                placeholder="Name"
+                placeholder={lang["Contact"].PlaceholderName}
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
@@ -42,7 +46,7 @@ const Contact: NextPage = () => {
               <input
                 className="bg-white drop-shadow-xl h-[60px] w-[200px] rounded-lg placeholder:text-[#C4C4C4] pr-[14px] pl-[14px] focus:outline-0"
                 type="text"
-                placeholder="Phone number"
+                placeholder={lang["Contact"].PlaceholderPhone}
                 onChange={(e) => {
                   setPhone(e.target.value);
                 }}
@@ -56,7 +60,7 @@ const Contact: NextPage = () => {
                 <input
                   className="bg-white drop-shadow-xl h-[60px] w-full rounded-lg placeholder:text-[#C4C4C4] pr-[14px] pl-[14px] focus:outline-0"
                   type="text"
-                  placeholder="Email address*"
+                  placeholder={lang["Contact"].PlaceholderEmail}
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
@@ -67,7 +71,7 @@ const Contact: NextPage = () => {
                 <input
                   className="bg-white drop-shadow-xl h-[60px] w-full rounded-lg placeholder:text-[#C4C4C4] pr-[14px] pl-[14px] focus:outline-0"
                   type="text"
-                  placeholder="Subject*"
+                  placeholder={lang["Contact"].PlaceholderSubject}
                   onChange={(e) => {
                     setSubject(e.target.value);
                   }}
@@ -81,7 +85,7 @@ const Contact: NextPage = () => {
                 <input
                   className="bg-white h-[60px] w-full rounded-lg placeholder:text-[#C4C4C4] pr-[14px] pl-[14px] border-red-500 focus:outline-0 border-red-600 border-2"
                   type="text"
-                  placeholder="Email address*"
+                  placeholder={lang["Contact"].PlaceholderEmail}
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
@@ -93,7 +97,7 @@ const Contact: NextPage = () => {
                 <input
                   className="bg-white h-[60px] w-full rounded-lg placeholder:text-[#C4C4C4] pr-[14px] pl-[14px] focus:outline-0   border-red-600 border-2"
                   type="text"
-                  placeholder="Subject*"
+                  placeholder={lang["Contact"].PlaceholderSubject}
                   onChange={(e) => {
                     setSubject(e.target.value);
                   }}
@@ -108,7 +112,7 @@ const Contact: NextPage = () => {
               className="w-full drop-shadow-xl h-[160px] resize-none rounded-lg placeholder:text-[#C4C4C4] pr-[14px] pl-[14px] pt-[14px] focus:outline-0"
               id="story"
               name="story"
-              placeholder="Message"
+              placeholder={lang["Contact"].PlaceholderMessage}
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
@@ -150,7 +154,7 @@ const Contact: NextPage = () => {
                   }
                 }}
               >
-                Submit
+                {lang["Contact"].Submit}
               </button>
             ) : (
               <button className="transition drop-shadow-xl cursor-default	 duration-500 hover:bg-[#f90000] bg-[#f90000] font-bold text-white p-1 px-6 text-xl rounded-xl">
@@ -162,11 +166,10 @@ const Contact: NextPage = () => {
       </div>
       <div className="lg:w-1/2 flex justify-end place-items-center">
         <div className="lg:w-3/4  bg-[#F9F3F5] grid">
-          <h3 className="font-bold text-4xl text-left p-10">Contact me!</h3>
-          <p className="p-10 pt-0 font-bold">
-            Would you like to offer me A permanent contract ? Or or implement
-            discuss with me about a project ? Do not hesitate to contact me.
-          </p>
+          <h3 className="font-bold text-4xl text-left p-10">
+            {lang["Contact"].ContactMe}!
+          </h3>
+          <p className="p-10 pt-0 font-bold">{lang["Contact"].Description}</p>
           <div className="xl:flex space-y-10 xl:space-y-0 justify-around p-10">
             <a
               href="mailto:kylian.germain@hotmail.com"

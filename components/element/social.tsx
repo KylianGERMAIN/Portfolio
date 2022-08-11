@@ -1,17 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next";
 
-const Social: NextPage = () => {
+interface Props {
+  lang: any;
+}
+
+const Social = ({ lang }: Props) => {
   return (
     <div className="pt-20">
       <div className="grid w-full place-items-center">
         <div className=" bg-[#F9F3F5] rounded-lg flex">
           <div className="md:w-[500px] p-10">
             <h3 className="text-2xl font-bold text-center pb-2">
-              Social Networks
+              {lang["Social-Media"].SocialMedia}
             </h3>
             <p className="text-center text-[#C4C4C4]">
-              Social networks where I am active
+              {lang["Social-Media"].Description}
             </p>
           </div>
           <div className="w-2/3 flex place-items-center">

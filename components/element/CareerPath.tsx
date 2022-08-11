@@ -58,69 +58,62 @@ const CareerPath = ({ lang }: Props) => {
           {frame(
             "/img/school.png",
             "2019 - 2024",
-            "Expert en Technologies de l'Information (Diploma of expert of informatic system)",
+            lang["Career-Path"].Epitech,
             "Epitech Paris",
             ""
           )}
           {frame(
             "/img/school.png",
             "2023",
-            "Erasmus + in Krakow (Poland)",
+            lang["Career-Path"].AGH,
             "AGH University of Science and Technology",
             ""
           )}
           {frame(
             "/img/school.png",
             "2021",
-            "Tepitech 780 (TOEIC)",
+            lang["Career-Path"].Tepitech,
             "Epitech Paris",
             ""
           )}
           {frame(
             "/img/school.png",
-            "2020",
-            "TC1 educational training",
-            "Ionis-STM",
-            ""
-          )}
-          {frame(
-            "/img/school.png",
             "2019",
-            "Baccalaureat Scientifique Option Informatique (High School diploma)",
+            lang["Career-Path"].Bac,
             "Lycée Charles Baudelaire",
             ""
           )}
           {frame(
             "/img/school.png",
             "2016",
-            "Brevet des collèges (Junior High School diploma)",
+            lang["Career-Path"].Brevet,
             "College Stendhal",
             ""
           )}
           <div id="Professional_Experiences" className="pb-10 pt-10"></div>
           <h3 className="text-[#FF4C60] font-bold text-2xl pb-10 pt-10">
-            Professional Experiences
+            {lang["Career-Path"].Experiences}
           </h3>
           {frame(
             "/img/work.png",
-            "Avril 2022 - Juillet 2022",
-            "Full Stack Developer",
+            lang["Career-Path"].Date1,
+            lang["Career-Path"].Job1,
             "Blanc-Sec Media",
-            `Created a web project alone in Nextjs using Tailwind for the CSS and linked it to Strapi as a back office. Creating continuous testing with playwright and deploying with heroku`
+            lang["Career-Path"].Description1
           )}
           {frame(
             "/img/work.png",
-            "Octobre 2021 - Avril 2022",
-            "Part-time Web Developer",
+            lang["Career-Path"].Date2,
+            lang["Career-Path"].Job2,
             "Support Web",
-            "CSS correction on different websites and Creation of a specification of a website."
+            lang["Career-Path"].Description2
           )}
           {frame(
             "/img/work.png",
-            "July 2020 - January 2021",
-            "Full Stack Developer",
+            lang["Career-Path"].Date3,
+            lang["Career-Path"].Job3,
             "Ezus",
-            "Continuous integration in agile Scrum methodology of a back and a front from a model. The front is based on React js and CSS and the back is in python with a SQL database hosted on amazon AWS"
+            lang["Career-Path"].Description3
           )}
         </div>
       </div>

@@ -12,7 +12,7 @@
   },
   "About-me": {
     "Open2Work": "à l'écoute des opportunités",
-    "AboutMe": "À propos de moi.",
+    "AboutMe": "À propos de moi",
     "Description1": "Je suis un étudiant en informatique mais aussi, je suis un développeur full-stack, spécialisé à la fois dans le web et le mobile, avec une certaine sensibilité à l'UX et l'UI.",
     "Description2": "Je suis passionné par tout ce qui touche aux nouvelles technologies. J'aime découvrir et utiliser ces découvertes sur différents projets."
   },
@@ -24,6 +24,7 @@
     "CloudApp": "Il s'agit d'une application météo simple connectée à l'api open weather."
   },
   "Career-Path": {
+    "CareerPath": "mon parcours",
     "Diplomas": "Diplômes et qualiﬁcations",
     "Epitech": "Expert en Technologies de l'Information",
     "AGH": "Erasmus + à Cracovie (Pologne)",

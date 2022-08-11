@@ -7,22 +7,13 @@ import CareerPath from "../../components/element/CareerPath";
 import Contact from "../../components/element/Contact";
 import MyProject from "../../components/element/MyProject";
 import Social from "../../components/element/social";
-import jsonfr from "../../public/trad-json/fr.json";
-import jsonen from "../../public/trad-json/en.json";
 
-const HomeContainer: NextPage = () => {
-  const [lang, setLang] = useState(jsonfr);
+interface Props {
+  lang: any;
+  setLang: any;
+}
 
-  useEffect(() => {
-    var userLang = navigator.language;
-    alert(userLang);
-    if (userLang != "fr") {
-      setLang(jsonen);
-    } else {
-      setLang(jsonfr);
-    }
-  }, []);
-
+const HomeContainer = ({ lang, setLang }: Props) => {
   return (
     <div className="">
       <BannerDownload lang={lang} setLang={setLang} />
@@ -30,8 +21,8 @@ const HomeContainer: NextPage = () => {
       <AboutMe lang={lang} />
       <MyProject lang={lang} />
       <CareerPath lang={lang} />
-      <Social />
-      <Contact />
+      <Social lang={lang} />
+      <Contact lang={lang} />
     </div>
   );
 };

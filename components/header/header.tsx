@@ -7,42 +7,44 @@ import { RiContactsBook2Fill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrFormClose } from "react-icons/gr";
 
-interface Props {}
+interface Props {
+  lang: any;
+}
 
-const navigation = [
-  {
-    name: "Home",
-    href: "#Home",
-    icon: <AiFillHome size={20} />,
-    style: "color-black",
-  },
-  {
-    name: "About me",
-    href: "#About_me",
-    icon: <IoIosMan size={20} />,
-    style: "color-black",
-  },
-  {
-    name: "My projects",
-    href: "#My_project",
-    icon: <BsBriefcaseFill size={20} />,
-    style: "color-black",
-  },
-  {
-    name: "Career path",
-    href: "#Career_Path",
-    icon: <IoMdSchool size={20} />,
-    style: "color-black",
-  },
-  {
-    name: "Contact",
-    href: "#Contact",
-    icon: <RiContactsBook2Fill size={20} />,
-    style: "color-black",
-  },
-];
+const Header = ({ lang }: Props) => {
+  const navigation = [
+    {
+      name: "Home",
+      href: "#Home",
+      icon: <AiFillHome size={20} />,
+      style: "color-black",
+    },
+    {
+      name: lang["About-me"].AboutMe,
+      href: "#About_me",
+      icon: <IoIosMan size={20} />,
+      style: "color-black",
+    },
+    {
+      name: lang["My-Projects"].MyProjects,
+      href: "#My_project",
+      icon: <BsBriefcaseFill size={20} />,
+      style: "color-black",
+    },
+    {
+      name: lang["Career-Path"].CareerPath,
+      href: "#Career_Path",
+      icon: <IoMdSchool size={20} />,
+      style: "color-black",
+    },
+    {
+      name: "Contact",
+      href: "#Contact",
+      icon: <RiContactsBook2Fill size={20} />,
+      style: "color-black",
+    },
+  ];
 
-const Header = ({}: Props) => {
   return (
     <Popover>
       <nav className="p-5 fixed w-full bg-[#FFFAFA] z-50">
@@ -54,7 +56,6 @@ const Header = ({}: Props) => {
           </div>
           <Popover.Button className="text-black rounded-lg">
             <a href="#Home">
-              <span className="sr-only">Open main menu</span>
               <GiHamburgerMenu size={30} />
             </a>
           </Popover.Button>
