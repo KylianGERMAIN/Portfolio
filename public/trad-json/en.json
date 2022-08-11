@@ -1,0 +1,59 @@
+{
+  "Banner-Download": {
+    "Hi": "Hello, I'm",
+    "Job": "Full Stack Developer",
+    "Download": "Download"
+  },
+  "4-things": {
+    "WebDev": "Web Development",
+    "MobileDev": "Apps Development",
+    "Figma": "Figma",
+    "ProjectManagement": "Project Management"
+  },
+  "About-me": {
+    "Open2Work": "I'm Open to work",
+    "AboutMe": " About Me.",
+    "Description1": "I'm a student in computer science but also, i'm a full-stack developer, specializing in both web and mobile, with a certain sensitivity to UX and UI.",
+    "Description2": "I'm passionate about everything that touches new technologies. I love to discover and use these discoveries on different projects"
+  },
+  "My-Projects": {
+    "MyProjects": "My projects",
+    "Area": "This is a reaction action project with APIs. The project was elected best project in the class",
+    "ViePest": "This website was created by myself during an internship and is linked to a strapi back office",
+    "Freshen": "This project is my innovative project of end Epitech it is to return for 2024 and has for goal to value the world of the second hand",
+    "CloudApp": "This is a simple weather application connected to the open weather api"
+  },
+  "Career-Path": {
+    "CareerPath": "Career Path",
+    "Diplomas": "Diplomas and qualiﬁcations",
+    "Epitech": "Diploma of expert of informatic system",
+    "AGH": "Erasmus + in Krakow (Poland)",
+    "Tepitech": "Tepitech 780 (TOEIC)",
+    "Bac": "High School diploma",
+    "Brevet": "Junior High School diploma",
+    "Experiences": "Professional Experiences",
+    "Job1": "Full Stack Developer",
+    "Description1": "Created a web project alone in Nextjs using Tailwind for the CSS and linked it to Strapi as a back office. Creating continuous testing with playwright and deploying with heroku",
+    "Date1": "April 2022 - July 2022",
+    "Job2": "Part-time Web Developer",
+    "Description2": "CSS correction on different websites and Creation of a specification of a website.",
+    "Date2": "October 2020 - April 2021",
+    "Job3": "Développeur full stack",
+    "Description3": "Continuous integration in agile Scrum methodology of a back and a front from a model. The front is based on React js and CSS and the back is in python with a SQL database hosted on amazon AWS.",
+    "Date3": "July 2020 - January 2021"
+  },
+  "Social-Media": {
+    "SocialMedia": "Social Networks",
+    "Description": "Social networks where I am active"
+  },
+  "Contact": {
+    "PlaceholderName": "Name",
+    "PlaceholderPhone": "Phone number",
+    "PlaceholderEmail": "Email address*",
+    "PlaceholderSubject": "Subject*",
+    "PlaceholderMessage": "Message",
+    "Submit": "Submit",
+    "ContactMe": "Contact me",
+    "Description": "Would you like to offer me A permanent contract ? Or or implement discuss with me about a project ? Do not hesitate to contact me."
+  }
+}
