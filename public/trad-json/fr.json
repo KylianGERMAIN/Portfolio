@@ -1,59 +1,65 @@
 {
-  "Banner-Download": {
-    "Hi": "Bonjour, je suis",
-    "Job": "Développeur full stack",
-    "Download": "Télécharger"
-  },
-  "4-things": {
-    "WebDev": "Développement Web",
-    "MobileDev": "Développement Mobile",
-    "Figma": "Figma",
-    "ProjectManagement": "Manager de Projet"
-  },
-  "About-me": {
-    "Open2Work": "à l'écoute des opportunités",
-    "AboutMe": "À propos de moi",
-    "Description1": "Je suis un étudiant en informatique mais aussi, je suis un développeur full-stack, spécialisé à la fois dans le web et le mobile, avec une certaine sensibilité à l'UX et l'UI.",
-    "Description2": "Je suis passionné par tout ce qui touche aux nouvelles technologies. J'aime découvrir et utiliser ces découvertes sur différents projets."
-  },
-  "My-Projects": {
-    "MyProjects": "Mes projets",
-    "Area": "Il s'agit d'un projet d'action-réaction avec des APIs. Le projet a été élu meilleur projet de la promotion",
-    "ViePest": "Ce site web a été créé par moi-même lors d'un stage et est lié à un back-office strapi.",
-    "Freshen": "Ce projet est mon projet innovant de fin Epitech il est à rendre pour 2024 et a pour but de valoriser le monde de la seconde main.",
-    "CloudApp": "Il s'agit d'une application météo simple connectée à l'api open weather."
-  },
-  "Career-Path": {
-    "CareerPath": "mon parcours",
-    "Diplomas": "Diplômes et qualiﬁcations",
-    "Epitech": "Expert en Technologies de l'Information",
-    "AGH": "Erasmus + à Cracovie (Pologne)",
-    "Tepitech": "Tepitech 780 (TOEIC)",
-    "Bac": "Baccalaureat Scientifique Option Informatique",
-    "Brevet": "Brevet des collèges",
-    "Experiences": "Expériences professionnelles",
-    "Job1": "Développeur full stack",
-    "Description1": "Création d'un projet web seul avec Nextjs en utilisant Tailwind pour le CSS lié avec Strapi comme back office. Création de tests continus avec playwright et déploiement avec heroku",
-    "Date1": "Avril 2022 - Juillet 2022",
-    "Job2": "Développeur Web à temps partiel",
-    "Description2": "Correction CSS sur différents sites web et création d'un cahier des charges d'un site web.",
-    "Date2": "Octobre 2021 - Avril 2022",
-    "Job3": "Développeur full stack",
-    "Description3": "Intégration continue en méthodologie agile Scrum d'un back et d'un front à partir d'une maquette. Le front est basé sur React js et CSS et le back est en python avec une base de données SQL hébergée sur amazon AWS.",
-    "Date3": "Juillet 2020 - Janvier 2021"
-  },
-  "Social-Media": {
-    "SocialMedia": "Réseaux sociaux",
-    "Description": "Réseaux sociaux où je suis actif"
-  },
-  "Contact": {
-    "PlaceholderName": "Nom",
-    "PlaceholderPhone": "Numéro de téléphone",
-    "PlaceholderEmail": "Adresse Email*",
-    "PlaceholderSubject": "Sujet*",
-    "PlaceholderMessage": "Message",
-    "Submit": "Envoyer",
-    "ContactMe": "Me contacter",
-    "Description": "Vous souhaitez me proposer un contrat permanent ? Ou bien discuter avec moi d'un projet ? N'hésitez pas à me contacter."
-  }
+    "Banner-Download": {
+        "Hi": "Bonjour, je suis",
+        "Job": "Développeur full stack",
+        "Download": "Télécharger"
+    },
+    "4-things": {
+        "WebDev": "Développement Web",
+        "MobileDev": "Développement Mobile",
+        "Figma": "Figma",
+        "ProjectManagement": "Manager de Projet"
+    },
+    "About-me": {
+        "Open2Work": "à l'écoute des opportunités",
+        "AboutMe": "À propos de moi",
+        "Description1": "Je suis un étudiant en informatique mais aussi, je suis un développeur full-stack, spécialisé à la fois dans le web et le mobile, avec une certaine sensibilité à l'UX et l'UI.",
+        "Description2": "Je suis passionné par tout ce qui touche aux nouvelles technologies. J'aime découvrir et utiliser ces découvertes sur différents projets."
+    },
+    "My-Projects": {
+        "MyProjects": "Mes projets",
+        "Area": "Il s'agit d'un projet d'action-réaction avec des APIs. Le projet a été élu meilleur projet de la promotion",
+        "ViePest": "Ce site web a été créé par moi-même lors d'un stage et continue d'être améliorer en freelance le site est lié à un back-office strapi.",
+        "Freshen": "Ce projet est mon projet innovant de fin Epitech il est à rendre pour 2024 et a pour but de valoriser le monde de la seconde main.",
+        "CloudApp": "Il s'agit d'une application météo simple connectée à l'api open weather.",
+        "Applelike": "Ceci est une reproduction totalement responsive et simple du site d'apple",
+        "ApiBackoffice": "Api back office sont deux projets à la fois un front et un back qui est un api rest. sur ce projet vous pourrez créer des articles et avec system d'authentification jsonwebtoken  tout ça relié à une base de données Postgresql",
+        "Orcana": "Orcana is a graphql api of an administrator panel it aims to assign roles, to have statistics on users and many other additions"
+    },
+    "Career-Path": {
+        "CareerPath": "mon parcours",
+        "Diplomas": "Diplômes et qualiﬁcations",
+        "Epitech": "Expert en Technologies de l'Information",
+        "AGH": "Erasmus + à Cracovie (Pologne)",
+        "Tepitech": "Tepitech 780 (TOEIC)",
+        "Bac": "Baccalaureat Scientifique Option Informatique",
+        "Brevet": "Brevet des collèges",
+        "Experiences": "Expériences professionnelles",
+        "Job0": "Développeur full stack en Freelance",
+        "Description0": "Amélioration d'un projet web avec la reproduction de maquettes et de l'optimisation SEO",
+        "Date0": "Septembre 2022 - Aujourd'hui",
+        "Job1": "Développeur full stack en Stage",
+        "Description1": "Création d'un projet web seul avec Nextjs en utilisant Tailwind pour le CSS lié avec Strapi comme back office. Création de tests continus avec playwright et déploiement avec heroku",
+        "Date1": "Avril 2022 - Juillet 2022",
+        "Job2": "Développeur Web à temps partiel en Stage",
+        "Description2": "Correction CSS sur différents sites web et création d'un cahier des charges d'un site web.",
+        "Date2": "Octobre 2021 - Avril 2022",
+        "Job3": "Développeur full stack en Stage",
+        "Description3": "Intégration continue en méthodologie agile Scrum d'un back et d'un front à partir d'une maquette. Le front est basé sur React js et CSS et le back est en python avec une base de données SQL hébergée sur amazon AWS.",
+        "Date3": "Juillet 2020 - Janvier 2021"
+    },
+    "Social-Media": {
+        "SocialMedia": "Réseaux sociaux",
+        "Description": "Réseaux sociaux où je suis actif"
+    },
+    "Contact": {
+        "PlaceholderName": "Nom",
+        "PlaceholderPhone": "Numéro de téléphone",
+        "PlaceholderEmail": "Adresse Email*",
+        "PlaceholderSubject": "Sujet*",
+        "PlaceholderMessage": "Message",
+        "Submit": "Envoyer",
+        "ContactMe": "Me contacter",
+        "Description": "Vous souhaitez me proposer un contrat permanent ? Ou bien discuter avec moi d'un projet ? N'hésitez pas à me contacter."
+    }
 }
