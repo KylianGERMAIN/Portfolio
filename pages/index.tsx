@@ -8,68 +8,74 @@ import jsonfr from "../public/trad-json/fr.json";
 import jsonen from "../public/trad-json/en.json";
 
 const Home: NextPage = () => {
-  const [lang, setLang] = useState(jsonen);
+    const [lang, setLang] = useState(jsonen);
 
-  useEffect(() => {
-    var userLang = navigator.language;
-    if (userLang != "fr") {
-      setLang(jsonen);
-    } else {
-      setLang(jsonfr);
-    }
-  }, []);
+    useEffect(() => {
+        var userLang = navigator.language;
+        if (userLang != "fr") {
+            setLang(jsonen);
+        } else {
+            setLang(jsonfr);
+        }
+    }, []);
 
-  return (
-    <Layout lang={lang}>
-      <Head>
-        <title>Kylian Germain Portfolio</title>
-        <meta
-          name="description"
-          content={`I am Kylian GERMAIN, passionate about everything that touches new technologies, full-stack developer, specialized in web and mobile and student in 4th year at Epitech Paris.`}
-        />
+    return (
+        <Layout lang={lang}>
+            <Head>
+                <title>Kylian Germain Portfolio</title>
+                <meta
+                    name="description"
+                    content={`I am Kylian GERMAIN, passionate about everything that touches new technologies, full-stack developer, specialized in web and mobile and student in 4th year at Epitech Paris.`}
+                />
 
-        <meta itemProp="name" content={"Kylian Germain Portfolio"} />
-        <meta
-          itemProp="description"
-          content={`I am Kylian GERMAIN, passionate about everything that touches new technologies, full-stack developer, specialized in web and mobile and student in 4th year at Epitech Paris.`}
-        />
-        <meta
-          itemProp="image"
-          content={
-            "https://media-exp1.licdn.com/dms/image/C4E03AQHHDvqR-WPSMQ/profile-displayphoto-shrink_800_800/0/1627891692796?e=1662595200&v=beta&t=la7So89eb31cuk-MUFme8dsu8e8e0kgFkwQlyFzBrtk"
-          }
-        />
+                <meta itemProp="name" content={"Kylian Germain Portfolio"} />
+                <meta
+                    itemProp="description"
+                    content={`I am Kylian GERMAIN, passionate about everything that touches new technologies, full-stack developer, specialized in web and mobile and student in 4th year at Epitech Paris.`}
+                />
+                <meta
+                    itemProp="image"
+                    content={
+                        "https://media.licdn.com/dms/image/D4D03AQEN76uqXN8RAw/profile-displayphoto-shrink_800_800/0/1676460161742?e=1682553600&v=beta&t=t_cf9apOCHZ6sujhvfKjdQK3seU0HExw9XJC3L53QAY"
+                    }
+                />
 
-        <meta name="og:title" content={"Kylian Germain Portfolio"} />
-        <meta
-          name="og:description"
-          content={`I am Kylian GERMAIN, passionate about everything that touches new technologies, full-stack developer, specialized in web and mobile and student in 4th year at Epitech Paris.`}
-        />
-        <meta
-          property="og:image"
-          content={
-            "https://media-exp1.licdn.com/dms/image/C4E03AQHHDvqR-WPSMQ/profile-displayphoto-shrink_800_800/0/1627891692796?e=1662595200&v=beta&t=la7So89eb31cuk-MUFme8dsu8e8e0kgFkwQlyFzBrtk"
-          }
-        />
-        <meta property="og:url" content={"https://viepest.herokuapp.com"} />
-        <meta property="og:type" content="website" />
+                <meta name="og:title" content={"Kylian Germain Portfolio"} />
+                <meta
+                    name="og:description"
+                    content={`I am Kylian GERMAIN, passionate about everything that touches new technologies, full-stack developer, specialized in web and mobile and student in 4th year at Epitech Paris.`}
+                />
+                <meta
+                    property="og:image"
+                    content={
+                        "https://media.licdn.com/dms/image/D4D03AQEN76uqXN8RAw/profile-displayphoto-shrink_800_800/0/1676460161742?e=1682553600&v=beta&t=t_cf9apOCHZ6sujhvfKjdQK3seU0HExw9XJC3L53QAY"
+                    }
+                />
+                <meta
+                    property="og:url"
+                    content={"https://www.kylian-germain.com/"}
+                />
+                <meta property="og:type" content="website" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={"Kylian Germain Portfolio"} />
-        <meta
-          name="twitter:description"
-          content={`I am Kylian GERMAIN, passionate about everything that touches new technologies, full-stack developer, specialized in web and mobile and student in 4th year at Epitech Paris.`}
-        />
-        <meta
-          name="twitter:image"
-          content={
-            "https://media-exp1.licdn.com/dms/image/C4E03AQHHDvqR-WPSMQ/profile-displayphoto-shrink_800_800/0/1627891692796?e=1662595200&v=beta&t=la7So89eb31cuk-MUFme8dsu8e8e0kgFkwQlyFzBrtk"
-          }
-        />
-      </Head>
-      <HomeContainer lang={lang} setLang={setLang} />
-    </Layout>
-  );
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta
+                    name="twitter:title"
+                    content={"Kylian Germain Portfolio"}
+                />
+                <meta
+                    name="twitter:description"
+                    content={`I am Kylian GERMAIN, passionate about everything that touches new technologies, full-stack developer, specialized in web and mobile and student in 4th year at Epitech Paris.`}
+                />
+                <meta
+                    name="twitter:image"
+                    content={
+                        "https://media.licdn.com/dms/image/D4D03AQEN76uqXN8RAw/profile-displayphoto-shrink_800_800/0/1676460161742?e=1682553600&v=beta&t=t_cf9apOCHZ6sujhvfKjdQK3seU0HExw9XJC3L53QAY"
+                    }
+                />
+            </Head>
+            <HomeContainer lang={lang} setLang={setLang} />
+        </Layout>
+    );
 };
 
 export default Home;
