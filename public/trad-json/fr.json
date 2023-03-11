@@ -24,7 +24,7 @@
         "CloudApp": "Il s'agit d'une application météo simple connectée à l'api open weather.",
         "Applelike": "Ceci est une reproduction totalement responsive et simple du site d'apple",
         "ApiBackoffice": "Api back office sont deux projets à la fois un front et un back qui est un api rest. sur ce projet vous pourrez créer des articles et avec system d'authentification jsonwebtoken  tout ça relié à une base de données Postgresql",
-        "Orcana": "Orcana est une api graphql d'un panneau d'administration dont le but est d'attribuer des rôles, d'avoir des statistiques sur les utilisateurs, de discuter avec les gens et bien d'autres ajouts."
+        "Orcana": "Orcana est une api graphql d'un panneau d'administration dont le but est d'attribuer des rôles, d'avoir des statistiques sur les utilisateurs, de discuter et bien d'autres ajouts."
     },
     "Career-Path": {
         "CareerPath": "Mon parcours",
